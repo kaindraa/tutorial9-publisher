@@ -7,3 +7,6 @@ Publisher mengirimkan 5 messages yang berupa `UserCreatedEventMessage`.
 program, what does it mean?
  
  Artinya adalah publisher dan subscriber terkoneksi ke message broker amqp yang sama. Keduanya sama-sama menggunakan kredensial `guest` dan mengakses ke mesin `localhost` menggunakan port default amqp 5672.
+
+ ## Running RabbitMQ
+![Running RabbitMQ](images/running_rabbitmq.png)
