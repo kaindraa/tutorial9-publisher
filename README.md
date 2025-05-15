@@ -17,3 +17,9 @@ program, what does it mean?
 ![Console Publisher](images/console_publisher.png)
 
 Ketika `cargo run` di konsol publisher (gambar bawah), publisher mengirimkan data ke broker RabbitMQ melalui koneksi protokol AMQP. Setelah itu, subscriber yang memang sudah berjalan dengan `cargo run` akan menerima dan memproses event dari publisher melalui RabbitMQ.
+
+## Monitoring Chart Based on Publisher
+![Chart Spikes](images/chart_spikes.png)
+
+Spike muncul karena ketika publisher run, publisher mengirimkan beberapa message ke RabbitMQ. Proses publish dan consume yang terjadi dalam waktu singkat ini menyebabkan muncul spike di grafik.
+
